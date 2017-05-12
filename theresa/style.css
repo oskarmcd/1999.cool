@@ -1,7 +1,8 @@
 html {
   font-size: 10px;
-  background: url(theresa-may.jpg) top center;
+  background: url(theresa-may.jpg) bottom center;
   background-size: cover;
+
 }
 body,html {
   margin: 0;

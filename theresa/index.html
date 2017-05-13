@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <title>interactive theresa may experience</title>
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
+
         <h1>welcome to the interactive theresa may experience</h1>
         <div class="keys">
             <div data-key="65" class="key">
@@ -36,6 +39,7 @@
                 <kbd>L</kbd>
             </div>
         </div>
+
         <audio data-key="65" src="http://1999.cool/theresa/sounds/1c.ogg"></audio>
         <audio data-key="83" src="http://1999.cool/theresa/sounds/2d.ogg"></audio>
         <audio data-key="68" src="http://1999.cool/theresa/sounds/3e.ogg"></audio>
@@ -54,10 +58,11 @@
             }
 
             function playSound(e) {
-                document.documentElement.style.backgroundImage = "url('theresa-may-open.jpg')";
                 const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
                 const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
                 if (!audio) return;
+
+                document.documentElement.style.backgroundImage = "url('theresa-may-open.jpg')";
 
                 key.classList.add('playing');
                 audio.currentTime = 0;

@@ -1,6 +1,6 @@
 html {
     font-size: 10px;
-    background: url(theresa-may.jpg) no-repeat center center fixed;
+    background: url('theresa-may.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -5,5 +5,6 @@ body {
 .text-body {
 	background-color: #e1e6f5; 
 	padding: 1% 1%;
-	position: fixed; 
+	position: fixed;
+	max-width: 60%;
 }

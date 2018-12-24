@@ -1,16 +1,34 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>oskar mcdermott</title>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-    	<div class="text-body">
-	        <p>my name is oskar mcdermott</p>
-	        <p>i'm currently in my third year of university (graduating may 2020) studying computational problem solving and software development at dublin city university.</p>
-	        <p>i'm doing an 11-month placement as an intern software development engineer at amazon web services in dublin (specifically, working in their <a href="https://aws.amazon.com/cloudwatch/">cloudwatch</a> department).</p>
-	        <p>i'm interested in short-term positions between may and october 2019. nice people and cool projects are my only requirement :-)</p>
-	        <p><a href="https://github.com/oskarmcd">github</a> | <a href="https://twitter.com/oskarmcd">twitter</a></p>
-    	</div>
-    </body>
+<head>
+	<title>Oskar McDermott</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
+	<script type="text/javascript" src="p5.js"></script>
+
+</head>
+<body>
+	<div id="central-text-holder">
+		<article>
+			<h1> hi! my name is oskar mcdermott. </h1>
+			<h2>i'm currently contracted as an intern software development engineer at amazon web services in dublin (specifically, working in their <a href='https://aws.amazon.com/cloudwatch'>cloudwatch</a> department). </h2>
+			<h2>i'm interested in short-term positions between may and october 2019. nice people and cool projects are my only requirement :-)</h2>
+			<p><a href="https://github.com/oskarmcd">github</a> <a href="https://twitter.com/oskarmcd">twitter</a> <a class="internal-links" onclick="alterText('skills')">skills</a></p>
+		</article>
+	</div>
+
+	<script type="text/javascript">
+		function alterText(page) {
+			if (page === 'skills') {
+				document.getElementById("central-text-holder").innerHTML = '<div><section id="collegeProjects"><h1>personal/college projects</h1><article><h1><a href="http://canigetabike.com">canigetabike.com</a></h1><p>october 2018 - present</p><p>skills honed</p><ul><li>serverless architecture</li><li>api design</li><li>database administration</li></ul></article><article><h1>college project: hedon</h1><p>sept 2017 - may 2018</p><p>skills honed</p><ul><li>react.js</li><li>material design</li><li>chart.js</li></ul></article><article><h1>personal site: <a href="https://1999.cool">1999.cool</a></h1><p>skills honed</p><ul><li>p5.js</li><li>semantic elements</li></ul></article></section><section id="professionalExperience"><h1>professional experience</h1><article><h1>aws cloudwatch</h1><p>june 2018 - may 2019</p><p>skills honed</p><ul><li>java</li><li>spring</li><li>node.js</li><li>agile development</li></ul></article><article><h1>deloitte czech republic</h1><p>july 2017 - december 2017</p><p>skills honed</p><ul><li>copywriting</li><li>project management</li><li>public speaking</li></ul></article><article><h1><a href="http://thewordmagazine.com">the word magazine</a></h1><p>june 2017</p><p>skills honed</p><ul><li>wordpress</li><li>search engine optimisation</li><li>google analytics</li></ul></article></section><footer><p style="float: left; padding-left: 1%;">more information on my <a href="https://www.linkedin.com/in/oskarmcdermott/">linkedin</a> or my <a href="https://1999.cool/cv">cv</a><p><p style="float: right; padding-right: 1%;"><a class="internal-links" onClick="alterText(\'intro\')">main menu</a></p></footer></div>'
+			} else {
+				document.getElementById("central-text-holder").innerHTML = '<article><h1> hi! my name is oskar mcdermott. </h1><h2>i\'m currently contracted as an intern software development engineer at amazon web services in dublin (specifically, working in their <a href="https://aws.amazon.com/cloudwatch">cloudwatch</a> department). </h2><h2>i\'m interested in short-term positions between may and october 2019. nice people and cool projects are my only requirement :-)</h2><p><a href="https://github.com/oskarmcd">github</a> <a href="https://twitter.com/oskarmcd">twitter</a> <a class="internal-links" onClick="alterText(\'skills\')">skills</a></p></article>'
+			}
+		}
+		
+	</script>
+</body>
 </html>

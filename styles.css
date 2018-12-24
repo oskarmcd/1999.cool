@@ -1,0 +1,64 @@
+@media only screen and (min-width: 600px) {
+	#central-text-holder {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#professionalExperience {
+	width: 40%;
+	overflow:hidden;
+	}
+
+	#collegeProjects {
+		width: 40%;
+	    float:right;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+	#central-text-holder {
+		width:98%;
+	}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Questrial', sans-serif;
+}
+
+
+#central-text-holder {
+	min-width: 15%;
+	z-index: 1;
+	background-color: #FFF;
+	border: 1px solid #000;
+}
+/*
+#professionalExperience {
+	width: 40%;
+	overflow:hidden;
+}
+
+#collegeProjects {
+	width: 40%;
+    float:right;
+}*/
+
+
+article {
+	padding: 0 3% 3% 3%;
+}
+
+section {
+	padding: 0 0 3% 3%;
+}
+
+.internal-links {
+     cursor:pointer;
+     color:blue;
+     text-decoration:underline;
+}
